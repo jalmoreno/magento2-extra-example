@@ -1,6 +1,6 @@
-##Manual installation :
+forked by Joao Moreno  from github (https://github.com/ibnab/payment-additional)
 
-forked by Joao Moreno from github (https://github.com/ibnab/payment-additional)
+##Manual installation :
 
 past in your folder app/code
 
