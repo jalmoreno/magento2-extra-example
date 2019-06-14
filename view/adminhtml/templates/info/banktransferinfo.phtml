@@ -1,0 +1,14 @@
+<?php
+use Magento\OfflinePayments\Model\Banktransfer;
+$payment = $block->getOrder()->getPayment();
+$method = $payment->getMethodInstance()->getCode();
+?>
+<?php if ($method == Banktransfer::PAYMENT_METHOD_BANKTRANSFER_CODE) :?>
+<div class="admin__page-section-item-content">
+    <strong><?php echo __('Campo customizado 1:') ?></strong>
+	<!-- from here -->
+	<span class="price"><?php print_r($payment->getAdditionalInformation('adicional1'));?></span>
+	<!-- end here -->
+</div>
+<?php endif; ?>
+
